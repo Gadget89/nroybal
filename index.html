@@ -16,14 +16,18 @@
     // create a standard scene and add it to a controller
     new ScrollMagic.Scene()
         .addTo(controller)
-        .addIndicators();
+        .addIndicators()
+        TweenMax.fromTo("#navWrapper", 3, {y:-25}, {y:20, yoyo:true})
+
     </script>
-    <nav>
-      <img src="" alt="">
-      <ul>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Contact Me</li>
+    <nav onload="dropInNav()">
+      <img class="navLogo"src="./N-Logo.png" alt="Nicolas Roybal logo.">
+      <ul id="navWrapper">
+        <li>my story</li>
+        <li>skills</li>
+        <li>projects</li>
+        <li>contact Me</li>
+        <li>blog</li>
       </ul>
     </nav>
   </body>
