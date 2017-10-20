@@ -16,7 +16,6 @@ ul {
   position: absolute;
 }
 li {
-  background-color: lightblue;
   list-style: none;
   display: inline;
   font-size: larger;
